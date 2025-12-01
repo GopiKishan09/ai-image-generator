@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- font awesome linking for icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo-wrapper">
+          <div class="logo">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h1>AI Image Generator</h1>
+        </div>
+
+        <button class="theme-toggele">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </header>
+
+      <div class="main-content">
+        <form action="#" class="prompt-form">
+          <!-- prompt container -->
+          <div class="prompt-container">
+            <textarea
+              class="prompt-input"
+              placeholder="Describe your imagination in detail"
+              required
+              autofocus
+            ></textarea>
+            <button type="button" class="Prompt-btn">
+              <i class="fa-solid fa-dice"></i>
+            </button>
+          </div>
+          <!-- prompt action buttons -->
+          <div class="prompt-actions">
+            <div class="select-wrapper">
+              <select class="custom-select" required>
+                <option value="" selected disabled>Select Model</option>
+                <option value="">FLUX.1-dev</option>
+                <option value="">FLUX.1-schne11</option>
+                <option value="">Stable Diffusion XL</option>
+                <option value="">Stable Diffucsion v1.5</option>
+                <option value="">Openjourney</option>
+              </select>
+            </div>
+
+            <div class="select-wrapper">
+              <select class="custom-select" required>
+                <option value="" selected disabled>Image Count</option>
+                <option value="1">1 Image</option>
+                <option value="2">2 Image</option>
+                <option value="3">3 Image</option>
+                <option value="4">4 Image</option>
+              </select>
+            </div>
+
+            <div class="select-wrapper">
+              <select class="custom-select" required>
+                <option value="" selected disabled>Aspect Ratio</option>
+                <option value="1">Square (1:1)</option>
+                <option value="2">Landscape (16:9)</option>
+                <option value="3">Portrait (9:16)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="generate-btn">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              Generate
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
