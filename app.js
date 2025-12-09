@@ -8,7 +8,7 @@ const ratioSelect = document.getElementById("ratio-select");
 const gridGalley = document.querySelector(".gallery-grid");
 const generateBtn = document.querySelector(".generate-btn");
 
-const API_KEY = "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";
+const API_KEY = "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";
 
 // Example prompts
 const examplePrompts = [
@@ -184,3 +184,4 @@ promptBtn.addEventListener("click", () => {
     examplePrompts[Math.floor(Math.random() * examplePrompts.length)];
   promptInput.value = random;
 });
+
