@@ -8,7 +8,7 @@ const ratioSelect = document.getElementById("ratio-select");
 const gridGalley = document.querySelector(".gallery-grid");
 const generateBtn = document.querySelector(".generate-btn");
 
-// API_KEY - REPLACE WITH YOUR OWN KEY
+const API_KEY = "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";
 
 // Example prompts
 const examplePrompts = [
